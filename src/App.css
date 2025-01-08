@@ -1,4 +1,4 @@
-.lists {
+/* .lists {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -11,6 +11,69 @@
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-update {
+  color: white;
+  background-color: #3b82f6;
+}
+
+.btn-cancel {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media (max-width: 768px) {
+  .lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list-container {
+    width: 100%;
+  }
+}
+
+.App {
+  font-family: "Roboto";
+} */
+
+.lists {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling for lists if needed */
+}
+
+.list-container {
+  width: 30%; /* Define width for larger screens */
+  min-width: 250px;
+  max-height: 80vh; /* Set maximum height relative to screen size (80% of viewport height) */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  background-color: #eff6ff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding is included in width and height */
 }
 
 .card {
@@ -50,7 +113,8 @@
   }
 
   .list-container {
-    width: 100%;
+    width: 100%; /* Full width for smaller screens */
+    max-height: 50vh; /* Adjust max height for smaller screens */
   }
 }
 
