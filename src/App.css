@@ -1,0 +1,59 @@
+.lists {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.list-container {
+  width: 30%;
+  min-width: 250px;
+  background-color: #eff6ff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Styling for the button */
+.btn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-update {
+  color: white;
+  background-color: #3b82f6;
+}
+
+.btn-cancel {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media (max-width: 768px) {
+  .lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list-container {
+    width: 100%;
+  }
+}
+
+.App {
+  font-family: "Roboto";
+}
