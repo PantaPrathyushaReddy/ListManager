@@ -134,9 +134,9 @@ const ListManager = () => {
           <div className="lists">
             {renderLists()}
             <div className="list-container">
-              <h3>
+              <span>
                 List {lists.length + 1} ({newListItems.length})
-              </h3>
+              </span>
               <ul style={{ listStyleType: "none", padding: 0 }}>
                 {newListItems.map((item) => (
                   <li key={item.id} style={{ marginBottom: "10px" }}>
